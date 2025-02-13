@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <a href="#" class="brand">moi</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <h1>Lorem.<br><span>Ipsum</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem minus sunt voluptatibus sequi explicabo officiis labore sed totam dolores, vel, ut itaque quae corporis veniam maiores? Cupiditate, perspiciatis ipsam.</p>
+            <a href="#">Read More</a>                    
+        </div>    
+    </section>
+     
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+        });
+    </script>
+
 </body>
 
 </html>
